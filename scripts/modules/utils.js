@@ -39,6 +39,7 @@ export const getCurrentDateTime = () => {
 }
 
 export const getWindDirection = (deg) => {
+  console.log(deg);
   const directions = [
     '&#8593;',
     '&#8598',
@@ -65,3 +66,12 @@ export const calculateDewPoint = (temp, humidity) => {
 
   return dewPointTP.toFixed(1)
 }
+
+
+export const getWeatherForecast = (data) => {
+  const foreCast = data.list.filter((item) => {
+    return
+  })
+
+}
+
