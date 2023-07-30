@@ -72,8 +72,9 @@ export const convertPressure = (pressure) => {
 }
 
 export const getWeatherForecastData = (data) => {
-  const currentDate = new Date();
 
+  // Для офсета +3 часа актуальность  прогноза погоды
+  const currentDate = new Date();
   const dateUTC = new Date(currentDate.getTime() + currentDate.getTimezoneOffset() * 60000);
 
   console.log(data);
